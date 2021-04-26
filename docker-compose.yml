@@ -1,0 +1,7 @@
+---
+version: '2'
+services:
+  whats_my_ip:
+    image: whats_my_ip
+    ports:
+      - 3000:3000
