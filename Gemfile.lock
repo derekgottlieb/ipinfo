@@ -52,6 +52,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
+  x86_64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
@@ -63,4 +64,4 @@ DEPENDENCIES
   whois
 
 BUNDLED WITH
-   2.2.22
+   2.2.32

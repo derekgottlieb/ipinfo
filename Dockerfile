@@ -1,4 +1,4 @@
-FROM ruby:3.0.2
+FROM ruby:3.0.3
 
 RUN groupadd --system ruby && \
     useradd --system --create-home --gid ruby ruby && \
