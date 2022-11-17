@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 
-gem "puma"
+gem "puma", "< 6.0"
 gem "pry"
-gem "sinatra", "~> 2.1"
+gem "sinatra", "~> 3.0"
 gem "standard"
 gem "whois"
 
