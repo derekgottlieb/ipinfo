@@ -19,4 +19,4 @@ jobs:
     - name: Run bundler
       run: bundle -v; bundle config set path 'vendor/bundle'; bundle install
     - name: Run linter
-      run: bundle exec rake standard
+      run: bundle exec standardrb
