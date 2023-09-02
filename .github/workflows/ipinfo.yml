@@ -1,0 +1,22 @@
+name: derekgottlieb/ipinfo
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches: [ main ]
+env:
+  APP_ENV: test
+  RACK_ENV: test
+  RAILS_ENV: test
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: ruby:3.2.2
+    steps:
+    - uses: actions/checkout@v3.6.0
+    - name: Run bundler
+      run: bundle -v; bundle config set path 'vendor/bundle'; bundle install
+    - name: Run linter
+      run: bundle exec rake standard
