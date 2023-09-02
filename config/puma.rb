@@ -5,7 +5,7 @@ threads threads_count, threads_count
 preload_app!
 
 APP_DIR = ENV["APP_DIR"] || "/usr/src/app"
-rackup DefaultRackup
+rackup "config.ru"
 port 3000
 environment ENV["RACK_ENV"] || "development"
 directory APP_DIR
