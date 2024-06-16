@@ -7,5 +7,6 @@ gem "standard"
 gem "whois"
 
 group :development do
+  gem "bundler-audit"
   gem "lefthook"
 end
